@@ -1,7 +1,10 @@
 *{
     margin: 0;
     font-family: "Google Sans Flex", sans-serif;
+    box-sizing: border-box;
+    color: #002B11;
 }
+
 button {
   background: none;
   border: none;
@@ -9,12 +12,25 @@ button {
   font: inherit;
   color: inherit;
   cursor: pointer;
-  
 }
+a{
+    text-decoration: none;
+}
+
 /* Navbar */
+.navbar-container{
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+    top: 0;
+    
+}
 .navbar{
-    max-width: 1136px;
-    margin: 8px auto 0px;
+    width: 1136px;
     height: 60px;
     padding: 0px 24px;
     /* border: solid black 1px; */
@@ -23,6 +39,7 @@ button {
     text-align: center;
     align-items: center;
     color: #002B11;
+    /* position: fixed; */
 }
 .navbar button{
     padding: 9.5px 16px;
@@ -68,7 +85,7 @@ button {
 /* Caption Tagline */
 .caption{
     max-width: 1136px;
-    margin: 40px auto 0px;
+    margin: 100px auto 0px;
     /* display: flex;
     justify-content: center;
     align-items: center; */
@@ -112,11 +129,11 @@ button {
 
 /* Search Bar */
 .search-bar__container{
-    max-width: 1136px;
+    max-width: 100%;
     margin: auto;
     display: flex;
     justify-content: center;
-    padding: 24px;
+    padding: 5px;
 }
 
 .search-bar {
@@ -138,13 +155,11 @@ button {
     margin-right: 10px;
     cursor: pointer;
 }
-
 .search-bar__input{
     border: none;
     background-color: transparent;
     min-width: 0;
     flex: 1;
-
 }
 .search-bar__input:focus{
     outline: none;
@@ -164,4 +179,283 @@ button {
 }
 .search-bar__button:hover{
     background-color: #00D352;
+}
+
+
+/* Marketing */
+.marketing-container1{
+    max-width: 1130px;
+    margin: 40px auto 30px;
+    padding: 0px 24px;
+}
+
+.marketing-container2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    border-radius: 10px;
+    background-color: #00EB5B;
+    padding: 24px;
+    color: #002B11;
+    cursor: pointer;
+}
+
+.marketing-left{
+    position: relative;
+    flex: 1;
+}
+
+.marketing-left img{
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+}
+
+.marketing-right{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.marketing-right h1{
+    font-size: 50px;
+    line-height: 0.8;
+    margin: 0 0 20px;
+    font-weight: black 900;
+}
+
+.marketing-right p{
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+.marketing__button{
+    background: #002B11;
+    color: white;
+    padding: 12px 26px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.marketing__button:hover{
+    background-color: #143C24;
+}
+.vertical-line2{
+    width: 1px;
+    height: 410px;
+    background-color: black;
+}
+
+/* Interest-text */
+.interest-text{
+    max-width: 1136px;
+    margin: auto auto;
+    padding: 0 24px;
+    line-height: 1.6;
+}
+/* Interest-image */
+.interest-image{
+    max-width: 1136px;
+    margin: 0 auto;
+    padding: 24px;
+}
+.interest-image ul{
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+}
+.interest-image li{
+    flex: 1;
+    position: relative;
+}
+.interest-image img{
+    width: 100%;
+    height: 272px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    cursor: pointer;
+}
+.interest-image img:hover{
+    opacity: 70%;
+}
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    border-radius: 8px;
+    cursor: pointer;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0)
+    );
+}
+.overlay:hover{
+    opacity: 75%;
+}
+.interest-image h2{
+    font-size: 30px;
+    color: white;
+    font-weight: black 900;
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    z-index: 1;
+}
+
+/* Tripadvisor Foundation */
+.foundation-container{
+    max-width: 1136px;
+    padding: 24px;
+    margin: 24px auto;
+}
+.foundation{
+    display: flex;
+    max-width: 1136px;
+    justify-content: center;
+    background-color: #F7F7F7;
+}
+.foundation__left{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+.foundation__left img{
+    padding: 24px;
+    width: 100%;
+    object-fit: contain;
+    display: block;
+}
+.foundation__right{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 24px;
+}
+.foundation__right h2{
+    font-size: 30px;
+}
+.foundation__right button{
+    background-color: #002B11;
+    border-radius: 50px;
+    padding: 15px 20px;
+    color: white;
+}
+
+/* Tripadvisor Recognition */
+.recognition-container{
+    width: 100%;
+    background-color: #002B11;
+    padding: 40px 0px;
+}
+.recognition{
+    max-width: 1136px;
+    display: flex;
+    justify-content: flex-start;
+    padding: 24px;
+    gap: 20px;
+    margin: auto;
+}
+.recognition__left{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 15px;
+    padding: 20px;
+}
+.recognition__left h2,p{
+    color: white; 
+}
+.recognition__left h2{
+    font-size: 45px;
+    font-weight: black 500;
+}
+.recognition__left img{
+    width: 65px;
+    height: auto;
+}
+.recognition__left>button{
+    background-color: white;
+    padding: 15px 10px;
+    color: #002B11;
+    border-radius: 50px;
+    width: 150px;
+}
+.recognition__left>button:hover{
+    background-color: #E5E5E5;
+}
+.recognition__right{
+    position: relative;
+    flex: 1;
+    overflow: hidden;
+}
+.circle{
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background-color: yellow;
+}
+.yellow-circle{
+    background-color: yellow;
+    top: 0;
+    left: 10%;
+}
+.green-circle{
+    background-color: #00AB42;
+    bottom: 0%;
+    left: 50%;
+}
+
+
+
+@media (max-width:1036px) {
+    .recognition__right{
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+  .marketing-container2 {
+    flex-direction: column;
+  }
+
+  .vertical-line2 {
+    display: none;
+  }
+
+  .marketing-right h1 {
+    font-size: 32px;
+  }
+
+  .foundation{
+    flex-direction: column;
+  }
+
+  .foundation img{
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px){
+    .interest-image ul{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .interest-image li{
+        flex: 1 1 48%;
+    }
 }
