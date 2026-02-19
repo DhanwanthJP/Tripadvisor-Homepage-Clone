@@ -344,9 +344,13 @@ a{
     text-align: center;
     gap: 20px;
     padding: 24px;
+    
 }
 .foundation__right h2{
     font-size: 30px;
+}
+.foundation__right p{
+    color: #002B11;
 }
 .foundation__right button{
     background-color: #002B11;
