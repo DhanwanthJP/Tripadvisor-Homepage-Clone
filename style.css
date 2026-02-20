@@ -16,6 +16,9 @@ button {
 a{
     text-decoration: none;
 }
+p{
+    color: #002B11;
+}
 
 /* Navbar */
 .navbar-container{
@@ -231,6 +234,7 @@ a{
 .marketing-right p{
     font-size: 18px;
     margin-bottom: 25px;
+    color: #002B11;
 }
 .marketing__button{
     background: #002B11;
@@ -255,6 +259,9 @@ a{
     margin: auto auto;
     padding: 0 24px;
     line-height: 1.6;
+}
+.interest-text>p{
+    color: #002B11;
 }
 /* Interest-image */
 .interest-image{
@@ -350,7 +357,7 @@ a{
     font-size: 30px;
 }
 .foundation__right p{
-    color: #002B11;
+    color: #002B11 !important;
 }
 .foundation__right button{
     background-color: #002B11;
@@ -366,12 +373,16 @@ a{
     padding: 40px 0px;
 }
 .recognition{
-    max-width: 1136px;
+    max-width: 1184px;
     display: flex;
     justify-content: flex-start;
     padding: 24px;
     gap: 20px;
     margin: auto;
+}
+.recognition p{
+    font-weight: bolder;
+    font-size: 18px;
 }
 .recognition__left{
     display: flex;
@@ -415,13 +426,58 @@ a{
 }
 .yellow-circle{
     background-color: yellow;
-    top: 0;
-    left: 10%;
+    top: 10%;
+    left: 20%;
 }
 .green-circle{
     background-color: #00AB42;
-    bottom: 0%;
+    bottom: 5%;
     left: 50%;
+}
+/* Footer */
+.footer{
+    width: 100%;
+    background-color: #F7F7F7;
+    padding: 30px 0;
+    margin-top: 50px;
+    color: #002B11;
+}
+.footer-s1{
+    display: flex;
+    gap: 50px;
+}
+.footer-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 8px;
+}
+.footer p{
+    color: #002B11;
+    font-size: smaller;
+    font-weight: 300;
+}
+.footer p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.footer-s1, .footer-s2{
+    max-width: 1136px;
+    margin: 0px auto;
+    padding: 0px 24px;
+}
+.footer-s1__col3{
+    margin-left: 50px;
+}
+.footer-s1__col4{
+    margin-left: 150px;
+}
+.footer-subtitle{
+    font-size: 16px !important;
+}
+.footer-subtitle:hover{
+    text-decoration: none !important;
+    cursor:auto !important;
 }
 
 
@@ -443,11 +499,9 @@ a{
   .marketing-right h1 {
     font-size: 32px;
   }
-
   .foundation{
     flex-direction: column;
   }
-
   .foundation img{
     width: 80%;
   }
@@ -458,7 +512,6 @@ a{
         flex-wrap: wrap;
         gap: 10px;
     }
-
     .interest-image li{
         flex: 1 1 48%;
     }
