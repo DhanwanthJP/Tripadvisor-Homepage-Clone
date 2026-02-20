@@ -95,7 +95,7 @@ p{
     text-align: center;
 }
 .caption>h1{
-    color: black;
+    color:#002B11;
     font-size: 57px;
     font-family: "Sansita", sans-serif;
     font-weight: Bold 700;
@@ -191,7 +191,6 @@ p{
     margin: 40px auto 30px;
     padding: 0px 24px;
 }
-
 .marketing-container2{
     display: flex;
     justify-content: space-between;
@@ -203,18 +202,15 @@ p{
     color: #002B11;
     cursor: pointer;
 }
-
 .marketing-left{
     position: relative;
     flex: 1;
 }
-
 .marketing-left img{
     width: 100%;
     border-radius: 8px;
     display: block;
 }
-
 .marketing-right{
     display: flex;
     flex-direction: column;
@@ -223,14 +219,12 @@ p{
     align-items: center;
     text-align: center;
 }
-
 .marketing-right h1{
     font-size: 50px;
     line-height: 0.8;
     margin: 0 0 20px;
     font-weight: black 900;
 }
-
 .marketing-right p{
     font-size: 18px;
     margin-bottom: 25px;
@@ -256,7 +250,7 @@ p{
 /* Interest-text */
 .interest-text{
     max-width: 1136px;
-    margin: auto auto;
+    margin: 15px auto auto;
     padding: 0 24px;
     line-height: 1.6;
 }
@@ -318,11 +312,82 @@ p{
     z-index: 1;
 }
 
+/* Heart icon */
+.heart{
+    position: relative;
+}
+.heart-icon{
+    position: absolute;
+    background-color: white;
+    padding: 5px;
+    width: auto;
+    min-height: 34px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 12px;
+    right: 12px;
+    cursor: pointer;
+}
+.heart-icon:hover{
+    background-color: #E5E5E5;
+}
+
+/* Next Section Places Div same layout as interests */
+.place-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: #002B11;
+    margin-top: 5px;
+    gap: 5px;
+}
+.place-name{
+    background-color: #F7F7F7;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    width: fit-content;
+}
+.place-details p{
+    color: #002B11;
+    font-size: 14px;
+}
+.place-fee{
+    font-weight: 550;
+    
+}
+.place-details h4{
+    font-weight: 550;
+    font-size: 18px;
+}
+.rating{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.rating i{
+    margin-bottom: 2px;
+}
+.rating p{
+    font-weight: 400;
+    color: #5f5f5f;
+}
+.circle-left{
+    margin-right: 4px;
+}
+.circle-right{
+    margin-left: 4px;
+}
+
+
 /* Tripadvisor Foundation */
 .foundation-container{
     max-width: 1136px;
     padding: 24px;
-    margin: 24px auto;
+    margin: 15px auto;
 }
 .foundation{
     display: flex;
@@ -351,7 +416,6 @@ p{
     text-align: center;
     gap: 20px;
     padding: 24px;
-    
 }
 .foundation__right h2{
     font-size: 30px;
@@ -370,7 +434,7 @@ p{
 .recognition-container{
     width: 100%;
     background-color: #002B11;
-    padding: 40px 0px;
+    padding: 30px 0px 40px;
 }
 .recognition{
     max-width: 1184px;
@@ -408,6 +472,7 @@ p{
     color: #002B11;
     border-radius: 50px;
     width: 150px;
+    margin-top: 20px;
 }
 .recognition__left>button:hover{
     background-color: #E5E5E5;
@@ -427,12 +492,12 @@ p{
 .yellow-circle{
     background-color: yellow;
     top: 10%;
-    left: 20%;
+    left: 30%;
 }
 .green-circle{
     background-color: #00AB42;
     bottom: 5%;
-    left: 50%;
+    left: 60%;
 }
 /* Footer */
 .footer{
@@ -457,7 +522,7 @@ p{
     font-size: smaller;
     font-weight: 300;
 }
-.footer p:hover{
+.footer-s1 p:hover{
     text-decoration: underline;
     cursor: pointer;
 }
@@ -478,6 +543,16 @@ p{
 .footer-subtitle:hover{
     text-decoration: none !important;
     cursor:auto !important;
+}
+.footer-s2{
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+.footer-s2>img{
+    width: 40px;
 }
 
 
