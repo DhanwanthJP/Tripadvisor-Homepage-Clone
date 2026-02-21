@@ -648,12 +648,22 @@ p{
         flex-shrink: 1;
     }
 }
+
 @media (max-width: 670px) {
     .footer-s1__col3{
         margin-left: 0px;
     }
     .footer-s1__col4{
         margin-left: 0px;
+    }
+    html {
+        font-size: 14px;
+    }
+    .place-details h4 {
+        font-size: small;
+    }
+    .place-details p{dd 
+        font-size: 12px;
     }
 }
 @media (max-width: 580px) {
