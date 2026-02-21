@@ -247,34 +247,34 @@ p{
     background-color: black;
 }
 
-/* Interest-text */
-.interest-text{
+/* Card-text */
+.card-text{
     max-width: 1184px;
     margin: 15px auto auto;
     padding: 0 24px;
     line-height: 1.6;
 }
-.interest-text>p{
+.card-text>p{
     color: #002B11;
 }
-/* Interest-image */
-.interest-image{
+/* Card-image */
+.card-image{
     max-width: 1184px;
     margin: 0 auto;
     padding: 24px;
 }
-.interest-image ul{
+.card-image ul{
     list-style: none;
     display: flex;
     gap: 15px;
     padding: 0;
     margin: 0;
 }
-.interest-image li{
+.card-image li{
     flex: 1;
     position: relative;
 }
-.interest-image img{
+.card-image img{
     width: 100%;
     height: 272px;
     object-fit: cover;
@@ -282,7 +282,7 @@ p{
     display: block;
     cursor: pointer;
 }
-.interest-image img:hover{
+.card-image img:hover{
     opacity: 70%;
 }
 .overlay {
@@ -302,7 +302,7 @@ p{
 .overlay:hover{
     opacity: 75%;
 }
-.interest-image h2{
+.card-image h2{
     font-size: 30px;
     color: white;
     font-weight: black 900;
@@ -583,11 +583,11 @@ p{
 }
 
 @media (max-width: 768px){
-    .interest-image ul{
+    .card-image ul{
         flex-wrap: wrap;
         gap: 10px;
     }
-    .interest-image li{
+    .card-image li{
         flex: 1 1 48%;
     }
 }
