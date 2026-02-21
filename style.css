@@ -52,6 +52,9 @@ p{
 .navbar button:hover{
     background-color: #E5E5E5;
 }
+.navbar-menu{
+    display: none;
+}
 .navbar-s1>img{
     width: 188px;
     height: auto;
@@ -201,6 +204,7 @@ p{
     padding: 24px;
     color: #002B11;
     cursor: pointer;
+    position: relative;
 }
 .marketing-left{
     position: relative;
@@ -218,6 +222,20 @@ p{
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+.marketing__playbutton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+    border-radius: 50%;
+}
+.marketing__playbutton:hover{
+    background-color: #00D954;
 }
 .marketing-right h1{
     font-size: 50px;
@@ -342,6 +360,7 @@ p{
     color: #002B11;
     margin-top: 5px;
     gap: 5px;
+    cursor: pointer;
 }
 .place-name{
     background-color: #F7F7F7;
@@ -349,6 +368,7 @@ p{
     border-radius: 4px;
     font-size: 12px;
     width: fit-content;
+    margin-top: 4px;
 }
 .place-details p{
     color: #002B11;
@@ -428,6 +448,9 @@ p{
     border-radius: 50px;
     padding: 15px 20px;
     color: white;
+}
+.foundation__right button:hover{
+    background-color: #143C24;
 }
 
 /* Tripadvisor Recognition */
@@ -562,6 +585,17 @@ p{
         display: none;
     }
 }
+@media (max-width: 1024px) {
+    .navbar-menu{
+    display: block;
+    }
+    .navbar-s2{
+        display: none;
+    }
+    .navbar-s3__currency{
+        display: none;
+    }
+}
 @media (max-width: 768px) {
   .marketing-container2 {
     flex-direction: column;
@@ -589,5 +623,28 @@ p{
     }
     .card-image li{
         flex: 1 1 48%;
+    }
+}
+@media (max-width: 670px) {
+    .footer-s1__col3{
+        margin-left: 0px;
+    }
+    .footer-s1__col4{
+        margin-left: 0px;
+    }
+}
+@media (max-width: 580px) {
+    .categories>button{
+        font-size: 16px;
+    }
+    .categories{
+        gap: 8px;
+        margin-top: 80px;
+    }
+    .caption{
+        display: none;
+    }
+    .navbar{
+        max-width: 1136px;
     }
 }
