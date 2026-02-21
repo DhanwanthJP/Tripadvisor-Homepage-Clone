@@ -33,7 +33,7 @@ p{
     
 }
 .navbar{
-    width: 1136px;
+    width: 1184px;
     height: 60px;
     padding: 0px 24px;
     /* border: solid black 1px; */
@@ -187,8 +187,8 @@ p{
 
 /* Marketing */
 .marketing-container1{
-    max-width: 1130px;
-    margin: 40px auto 30px;
+    max-width: 1184px;
+    margin: 50px auto 30px;
     padding: 0px 24px;
 }
 .marketing-container2{
@@ -249,7 +249,7 @@ p{
 
 /* Interest-text */
 .interest-text{
-    max-width: 1136px;
+    max-width: 1184px;
     margin: 15px auto auto;
     padding: 0 24px;
     line-height: 1.6;
@@ -259,7 +259,7 @@ p{
 }
 /* Interest-image */
 .interest-image{
-    max-width: 1136px;
+    max-width: 1184px;
     margin: 0 auto;
     padding: 24px;
 }
@@ -385,13 +385,13 @@ p{
 
 /* Tripadvisor Foundation */
 .foundation-container{
-    max-width: 1136px;
+    max-width: 1184px;
     padding: 24px;
     margin: 15px auto;
 }
 .foundation{
     display: flex;
-    max-width: 1136px;
+    /* max-width: 1136px; */
     justify-content: center;
     background-color: #F7F7F7;
 }
