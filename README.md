@@ -48,11 +48,11 @@ Maintaining proper spacing with padding instead of fixed heights\
 
 Folder Structure
 Tripadvisor-Homepage-Clone/
-│
-├── index.html
-├── style.css
-├── images/
-└── README.md
+│  
+├── index.html\
+├── style.css\
+├── images/\
+└── README.md\
 
 ### Learning Outcomes
 
